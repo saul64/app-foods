@@ -1,5 +1,5 @@
 import { Slot } from "expo-router";
-import { SavedFoodsProvider } from "../context/SavedFoodsContext"; // Ajusta si tu ruta es diferente
+import { SavedFoodsProvider } from "../context/SavedFoodsContext"; 
 
 export default function Layout() {
   return (
