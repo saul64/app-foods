@@ -23,7 +23,7 @@ export default function LoginScreen() {
     });
 
     if (error) {
-      Alert.alert("Error", error.message);
+      Alert.alert("Error, email o password invalidos");
     } else {
       const jwtToken = data?.session?.access_token;
       if (jwtToken) {

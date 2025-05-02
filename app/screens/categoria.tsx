@@ -18,7 +18,7 @@ export default function CategoriaPage() {
   }, []);
 
   const fetchAlimentos = async () => {
-    // Obtener el token del usuario autenticado
+    
     const { data: sessionData, error: sessionError } = await supabase.auth.getSession();
   
     if (sessionError) {

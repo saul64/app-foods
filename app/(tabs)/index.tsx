@@ -34,7 +34,7 @@ export default function Index() {
   }, []);
 
   const loadCategorias = async (token: string) => {
-    // Agregar el token al header de la solicitud
+    
     const { data, error } = await supabase
       .from("food")
       .select("categoria")

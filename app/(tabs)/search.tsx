@@ -63,7 +63,7 @@ export default function Search() {
           data={filteredFoods}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => <FoodCard food={item} />}
-          contentContainerStyle={{ paddingBottom: 20, paddingTop: 10 }}
+          contentContainerStyle={{ paddingBottom: 100, paddingTop: 10 }}
         />
       ) : (
         <Text className="text-center text-rose-500 mt-10">

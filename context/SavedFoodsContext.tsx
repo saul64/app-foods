@@ -8,7 +8,6 @@ type SavedFoodsContextType = {
     removeFood: (id: string) => void;
   };
   
-
 const SavedFoodsContext = createContext<SavedFoodsContextType | null>(null);
 
 export const SavedFoodsProvider = ({ children }: { children: ReactNode }) => {
