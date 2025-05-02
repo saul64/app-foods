@@ -1,4 +1,3 @@
-// context/SavedFoodsContext.tsx
 import { createContext, useContext, useState, ReactNode } from "react";
 import { Alert } from "react-native";
 import { Foods } from "../interfaces/food.supabase";
