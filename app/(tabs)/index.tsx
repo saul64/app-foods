@@ -12,7 +12,7 @@ export default function Index() {
 
   useEffect(() => {
     const checkAuthAndLoad = async () => {
-      // Obtener la sesión del usuario autenticado
+      
       const { data: sessionData, error: sessionError } = await supabase.auth.getSession();
 
       if (sessionError) {
@@ -21,10 +21,10 @@ export default function Index() {
       }
 
       if (sessionData && sessionData.session) {
-        // Si el usuario está autenticado, cargamos las categorías
+        
         loadCategorias(sessionData.session.access_token);
       } else {
-        // Si no hay sesión, redirigimos al login
+      
         Alert.alert("Sesión expirada", "Por favor, inicia sesión nuevamente.");
         router.push("/login");
       }
